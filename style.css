@@ -43,75 +43,71 @@ body {
     padding: 0 2rem;
 }
 
-/* hero */
-
-.hero {
-    margin-top: 8rem;
+a{
+    color: #fff;
 }
+
+/* hero */
 
 h1 {
     color: var(--White, #fff);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: 'Space Grotesk';
-    font-size: 180px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 88px; /* 48.889% */
     letter-spacing: -2.5px;
 }
 
-.names {
+.nav-bar{
     display: flex;
-    margin-top: 15rem;
-}
-
-.name-links {
-    display: flex;
-    gap: 100px;
-    width: 30rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-
-    a {
-        border-bottom: #4ee1a0 solid 4px;
-        padding-bottom: 20px;
-        color: var(--White, #fff);
-        font-family: 'Space Grotesk';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 26px; /* 130% */
-        letter-spacing: 2.286px;
-    }
+    justify-content: space-between;
+    margin: 1rem 10rem;
 }
 
-.center {
-    margin: 0 auto;
-}
-
-
-.cards{
-    margin-top: 7rem;
-    margin-bottom: 5rem;
-}
-
-.card{
-    border-radius: 3%;
-    margin-top: 4rem;
-    background: var(--light-grey);
-    flex-direction: column;
-    height: 35rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 10px;
-}
-
-.profile-pic{
-    grid-row: span 4;
-}
-
-.technologies{
+.nav-links{
     display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-right: 5rem;
+    font-weight: bold;
 }
+
+/* nav-links animation */
+
+.nav-links > li{
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links > li::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: var(--neon-greem);
+    left: 0;
+    bottom: -9px;
+    transition: width 0.4s ease-out;
+}
+
+.nav-links > li:hover::after{
+    width: 100%;
+}
+
+
+.line-1{
+    height: 1rem;
+    background-color: var(--neon-greem);
+    border: none;
+}
+
+.line-2{
+    margin-top: 5px;
+    height: 0.5rem;
+    background-color: var(--white);
+}
+
+
