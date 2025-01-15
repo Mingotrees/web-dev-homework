@@ -89,3 +89,25 @@ h1 {
 .center {
     margin: 0 auto;
 }
+
+
+.cards{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+.card{
+    border-radius: 3%;
+    margin-top: 4rem;
+    background: var(--light-grey);
+    flex-direction: column;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.project{
+    grid-column: span 2;
+}
+
