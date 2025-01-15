@@ -104,10 +104,14 @@ h1 {
     height: 35rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 10px;
 }
 
-.project{
-    grid-column: span 2;
+.profile-pic{
+    grid-row: span 4;
 }
 
+.technologies{
+    display: flex;
+}
