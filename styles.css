@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth !important;
 }
 
 ul {
@@ -44,14 +46,14 @@ body {
 }
 
 /* Navbar */
-.nav-bar{
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1rem 10rem;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-between;
   gap: 100px;
@@ -61,12 +63,12 @@ body {
 
 /* nav-links animation */
 
-.nav-links > li{
+.nav-links > li {
   position: relative;
   cursor: pointer;
 }
 
-.nav-links > li::after{
+.nav-links > li::after {
   position: absolute;
   content: "";
   width: 0%;
@@ -77,18 +79,17 @@ body {
   transition: width 0.4s ease-out;
 }
 
-.nav-links > li:hover::after{
+.nav-links > li:hover::after {
   width: 100%;
 }
 
-
-.line-1{
+.line-1 {
   height: 1rem;
   background-color: var(--neon-greem);
   border: none;
 }
 
-.line-2{
+.line-2 {
   margin-top: 5px;
   height: 0.5rem;
   background-color: var(--white);
@@ -96,8 +97,8 @@ body {
 
 .nav-links li a {
   color: #fff;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Space Grotesk';
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -108,8 +109,8 @@ body {
 
 .nav-bar h1 {
   color: var(--White, #fff);
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Space Grotesk';
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -119,8 +120,8 @@ body {
 
 .teamName {
   color: #fff;
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Space Grotesk';
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
@@ -147,8 +148,8 @@ body {
 .hero h1 {
   color: #fff;
 
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Space Grotesk';
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -159,8 +160,8 @@ body {
 .hero h2 {
   color: #fff;
 
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Space Grotesk';
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -172,9 +173,9 @@ body {
   margin-top: 1.7rem;
   width: 80%;
   color: var(--Grey, #d9d9d9);
-  font-feature-settings: 'liga' off, 'clig' off;
+  font-feature-settings: "liga" off, "clig" off;
   /* Body */
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -206,12 +207,12 @@ body {
   stroke: black;
 }
 
-.divider{
+.divider {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.project{
+.project {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,9 +220,9 @@ body {
   color: #fff;
 }
 
-.project h2{
-  font-feature-settings: 'liga' off, 'clig' off;
-  font-family: 'Space Grotesk';
+.project h2 {
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -229,7 +230,7 @@ body {
   letter-spacing: -2.5px;
 }
 
-.proj-title-line{
+.proj-title-line {
   width: 20rem;
   height: 5px;
   background-color: var(--neon-greem);
@@ -237,7 +238,7 @@ body {
   border: none;
 }
 
-.proj-item{
+.proj-item {
   font-size: 20px;
   margin-top: 9rem;
   display: grid;
@@ -248,7 +249,7 @@ body {
   color: var(--neon-greem);
 }
 
-.proj-item p{
+.proj-item p {
   margin: 2rem 0;
   color: var(--white);
   font-size: 15px;
@@ -260,29 +261,51 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   align-items: center;
   padding: 0 1rem;
 }
 
-
-.item-1{
+.item-1 {
   grid-row: span 2;
 }
 
-.item-2{
+.item-2 {
   grid-row: span 2;
 }
 
-.item-3{
+.item-3 {
   grid-row: span 2;
 }
 
-.proj-item-line{
+.proj-item-line {
   display: flex;
   justify-self: center;
   width: 6rem;
   height: 4px;
   background-color: var(--white);
+}
+
+/* interest */
+
+.interest-flex {
+  display: flex;
+}
+
+.interests-text {
+  width: 70%;
+}
+
+.interests-text h2 {
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk";
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px; /* 109.091% */
+  letter-spacing: -2.5px;
+  border-bottom: 0.4px solid white;
+  padding-bottom: 20px;
 }
