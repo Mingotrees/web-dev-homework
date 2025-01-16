@@ -245,11 +245,11 @@ body {
   margin-top: 9rem;
   display: grid;
   width: 100%;
-  height: 40rem;
+  height: 20rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 3fr;
   color: var(--neon-greem);
-  gap: 10px;
+  gap: 40px;
 }
 
 .proj-item h3{
@@ -263,7 +263,6 @@ body {
 }
 
 .item {
-  text-align: center;
   display: flex;
   flex-direction: column;
   width: 100%; 
@@ -271,6 +270,11 @@ body {
   align-items: center;
   padding: 0 1rem;
   transition: background-color 0.4s ease-in-out;
+
+}
+
+.item h3{
+  text-align: center;
 }
 
 .item:hover{
