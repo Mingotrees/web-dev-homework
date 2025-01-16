@@ -206,3 +206,72 @@ body {
 .hero .btn:hover svg path {
   stroke: black;
 }
+
+.divider{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.project h2{
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 68.75% */
+  letter-spacing: -2.5px;
+}
+
+.proj-title-line{
+  width: 20rem;
+  height: 5px;
+  background-color: var(--neon-greem);
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.proj-item{
+  font-size: 20px;
+  margin-top: 9rem;
+  display: grid;
+  width: 100vw;
+  height: 40rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  justify-items: center;
+  color: var(--neon-greem);
+}
+
+
+.item-1{
+  max-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  grid-row: span 2;
+}
+
+.item-2{
+  grid-row: span 2;
+}
+
+.item-3{
+  grid-row: span 2;
+}
+
+.proj-item-line{
+  display: flex;
+  justify-self: center;
+  width: 6rem;
+  height: 4px;
+  background-color: var(--white);
+}
