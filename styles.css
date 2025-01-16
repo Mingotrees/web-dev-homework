@@ -6,7 +6,7 @@
 
 html,
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   scroll-behavior: smooth !important;
 }
 
@@ -23,6 +23,7 @@ img {
 }
 
 body {
+  font-family: 'Space Grotesk';
   background-color: var(--black);
   scroll-behavior: smooth;
   width: 100%;
@@ -70,7 +71,7 @@ body {
 
 .nav-links > li::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 0%;
   height: 1px;
   background-color: var(--neon-greem);
@@ -97,8 +98,8 @@ body {
 
 .nav-links li a {
   color: #fff;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -109,8 +110,8 @@ body {
 
 .nav-bar h1 {
   color: var(--White, #fff);
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -120,8 +121,8 @@ body {
 
 .teamName {
   color: #fff;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
@@ -148,8 +149,8 @@ body {
 .hero h1 {
   color: #fff;
 
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -160,8 +161,8 @@ body {
 .hero h2 {
   color: #fff;
 
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -173,9 +174,9 @@ body {
   margin-top: 1.7rem;
   width: 80%;
   color: var(--Grey, #d9d9d9);
-  font-feature-settings: "liga" off, "clig" off;
+  font-feature-settings: 'liga' off, 'clig' off;
   /* Body */
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -194,18 +195,22 @@ body {
   padding: 15px 30px;
   color: white;
   border-radius: 8px;
-  transform: opacity 0.3 ease;
+
   margin-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
 }
 
 .hero .btn:hover {
   background-color: white;
   color: #242424;
+  transform: scale(1.05); 
 }
 
 .hero .btn:hover svg path {
   stroke: black;
+  transition: stroke 0.3s ease; 
 }
+
 
 .divider {
   margin-top: 4rem;
@@ -221,8 +226,8 @@ body {
 }
 
 .project h2 {
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -289,23 +294,78 @@ body {
 
 /* interest */
 
-.interest-flex {
+.interests-flex {
   display: flex;
+  width: 100%;
 }
 
 .interests-text {
-  width: 70%;
+  width: 100%;
+  flex: 2;
+}
+
+.interests-text p {
+  margin-top: 1.7rem;
+  width: 80%;
+  color: var(--Grey, #d9d9d9);
+  font-feature-settings: 'liga' off, 'clig' off;
+  /* Body */
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .interests-text h2 {
   color: #fff;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: "Space Grotesk";
-  font-size: 110px;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 80px;
   font-style: normal;
   font-weight: 700;
   line-height: 120px; /* 109.091% */
   letter-spacing: -2.5px;
   border-bottom: 0.4px solid white;
   padding-bottom: 20px;
+}
+
+.interests-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.interests-info h3 {
+  color: white;
+  text-align: center;
+}
+
+.web .webdev,
+.databaseimg {
+  margin-left: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+.database {
+  margin-top: 4rem;
+}
+
+.specific {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 10px;
+  width: 180px;
+}
+
+.specific img {
+  width: 30px;
+  height: 30px;
 }
