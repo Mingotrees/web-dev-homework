@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--black);
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --black: #151515;
+  --neon-greem: #4ee1a0;
+  --matte-black: #242424;
+  --light-grey: #d9d9d9;
+  --white: #fff;
+}
+
+/* Utility classes */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Navbar */
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 10rem;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-right: 5rem;
+  font-weight: bold;
+}
+
+/* nav-links animation */
+
+.nav-links > li{
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links > li::after{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--neon-greem);
+  left: 0;
+  bottom: 0;
+  transition: width 0.4s ease-out;
+}
+
+.nav-links > li:hover::after{
+  width: 100%;
+}
+
+
+.line-1{
+  height: 1rem;
+  background-color: var(--neon-greem);
+  border: none;
+}
+
+.line-2{
+  margin-top: 5px;
+  height: 0.5rem;
+  background-color: var(--white);
+}
+
+.nav-links li a {
+  color: #fff;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 275% */
+  letter-spacing: -1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar h1 {
+  color: var(--White, #fff);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 48.889% */
+  letter-spacing: -2.5px;
+}
+
+.teamName {
+  color: #fff;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 137.5% */
+  letter-spacing: -2.5px;
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.intro {
+  width: 100%;
+  border-bottom: solid white 2px;
+}
+
+.hero h1 {
+  color: #fff;
+
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 68.75% */
+  letter-spacing: -2.5px;
+}
+
+.hero h2 {
+  color: #fff;
+
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 183.333% */
+  letter-spacing: -2.5px;
+}
+
+.hero-body p {
+  margin-top: 1.7rem;
+  width: 80%;
+  color: var(--Grey, #d9d9d9);
+  font-feature-settings: 'liga' off, 'clig' off;
+  /* Body */
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hero .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+
+  background-color: var(--matte-black);
+  width: 250px;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 8px;
+  transform: opacity 0.3 ease;
+  margin-top: 1rem;
+}
+
+.hero .btn:hover {
+  background-color: white;
+  color: #242424;
+}
+
+.hero .btn:hover svg path {
+  stroke: black;
+}
