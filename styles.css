@@ -44,35 +44,77 @@ body {
 }
 
 /* Navbar */
-
-.navbar {
-  padding: 25px;
-  margin: 0 6rem;
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 10rem;
 }
-.navbar-flex {
+
+.nav-links{
   display: flex;
   justify-content: space-between;
+  gap: 100px;
+  margin-right: 5rem;
+  font-weight: bold;
 }
 
-.navbar-links {
-  display: flex;
-  gap: 9rem !important;
+/* nav-links animation */
+
+.nav-links > li{
+  position: relative;
+  cursor: pointer;
 }
 
-.navbar-links li a {
+.nav-links > li::after{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--neon-greem);
+  left: 0;
+  bottom: 0;
+  transition: width 0.4s ease-out;
+}
+
+.nav-links > li:hover::after{
+  width: 100%;
+}
+
+
+.line-1{
+  height: 1rem;
+  background-color: var(--neon-greem);
+  border: none;
+}
+
+.line-2{
+  margin-top: 5px;
+  height: 0.5rem;
+  background-color: var(--white);
+}
+
+.nav-links li a {
   color: #fff;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'Space Grotesk';
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 88px; /* 275% */
+  line-height: 50px; /* 275% */
   letter-spacing: -1px;
   transition: color 0.3s ease, transform 0.3s ease;
+}
 
-  &:hover {
-    color: #4ee1a0;
-  }
+.nav-bar h1 {
+  color: var(--White, #fff);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 48.889% */
+  letter-spacing: -2.5px;
 }
 
 .teamName {
@@ -84,21 +126,6 @@ body {
   font-weight: 700;
   line-height: 88px; /* 137.5% */
   letter-spacing: -2.5px;
-}
-
-.line-green {
-  height: 14px;
-  width: 100%;
-  border: none;
-  background-color: var(--neon-greem);
-  margin-bottom: 7px;
-}
-
-.line-white {
-  height: 8px;
-  width: 100%;
-  border: none;
-  background-color: white;
 }
 
 /* Hero */
@@ -177,4 +204,85 @@ body {
 
 .hero .btn:hover svg path {
   stroke: black;
+}
+
+.divider{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.project h2{
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 68.75% */
+  letter-spacing: -2.5px;
+}
+
+.proj-title-line{
+  width: 20rem;
+  height: 5px;
+  background-color: var(--neon-greem);
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.proj-item{
+  font-size: 20px;
+  margin-top: 9rem;
+  display: grid;
+  width: 100%;
+  height: 40rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  color: var(--neon-greem);
+}
+
+.proj-item p{
+  margin: 2rem 0;
+  color: var(--white);
+  font-size: 15px;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  align-items: center;
+  padding: 0 1rem;
+}
+
+
+.item-1{
+  grid-row: span 2;
+}
+
+.item-2{
+  grid-row: span 2;
+}
+
+.item-3{
+  grid-row: span 2;
+}
+
+.proj-item-line{
+  display: flex;
+  justify-self: center;
+  width: 6rem;
+  height: 4px;
+  background-color: var(--white);
 }
