@@ -208,20 +208,21 @@ body {
   color: white;
   border-radius: 8px;
 
-  margin-top: 2rem;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
 }
 
 .hero .btn:hover {
   background-color: white;
   color: #242424;
-  transform: scale(1.05);
+  transform: scale(1.05); 
 }
 
 .hero .btn:hover svg path {
   stroke: black;
-  transition: stroke 0.3s ease;
+  transition: stroke 0.3s ease; 
 }
+
 
 .divider {
   margin-top: 4rem;
@@ -247,13 +248,7 @@ body {
   letter-spacing: -2.5px;
 }
 
-<<<<<<< HEAD
-
-
-.proj-title-line{
-=======
 .proj-title-line {
->>>>>>> cris
   width: 20rem;
   height: 5px;
   background-color: var(--neon-greem);
@@ -314,67 +309,62 @@ body {
   grid-row: span 2;
 }
 
-<<<<<<< HEAD
 .proj-item-line{
   border: none;
-=======
-.proj-item-line {
->>>>>>> cris
   display: flex;
   justify-self: center;
   width: 6rem;
   height: 4px;
   background-color: var(--white);
 }
-<<<<<<< HEAD
-=======
 
 /* interest */
 
 .interests-flex {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
 }
 
 .interests-text {
+  margin-top: 1.6rem;
   width: 100%;
-  flex: 3;
+  flex: 2;
 }
 
 .interests-text p {
-  margin-top: 3rem;
+  margin-top: 1.8rem;
   width: 80%;
   color: var(--Grey, #d9d9d9);
   font-feature-settings: 'liga' off, 'clig' off;
   /* Body */
   font-family: 'Space Grotesk';
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
 }
 
-.interests-text h2 {
+.interests-text h2{
   color: #fff;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'Space Grotesk';
-  font-size: 80px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120px; /* 109.091% */
+  line-height: 80px; /* 109.091% */
   letter-spacing: -2.5px;
-  border-bottom: 0.4px solid white;
-  padding-bottom: 20px;
+}
+
+.interests-text h2:nth-of-type(2){
+  color: var(--neon-greem);
+  font-size: 70px;
 }
 
 .interests-info {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   width: 100%;
   flex: 1;
 }
@@ -409,4 +399,3 @@ body {
   width: 30px;
   height: 30px;
 }
->>>>>>> cris
