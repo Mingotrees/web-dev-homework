@@ -41,9 +41,10 @@ body {
 /* Utility classes */
 
 .container {
-  max-width: 1200px;
+  position: relative;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 5rem 5rem;
 }
 
 /* Navbar */
@@ -60,6 +61,10 @@ body {
   gap: 100px;
   margin-right: 5rem;
   font-weight: bold;
+}
+
+.nav-bar img {
+  width: 380px;
 }
 
 /* nav-links animation */
@@ -134,16 +139,23 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: center;
+  grid-template-columns: 20fr 12fr;
+  gap: 5rem;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-top: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .intro {
   width: 100%;
   border-bottom: solid white 2px;
+}
+
+.hero .logo {
+  height: 80%;
+  width: 600px !important;
 }
 
 .hero h1 {
@@ -196,21 +208,20 @@ body {
   color: white;
   border-radius: 8px;
 
-  margin-top: 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+  margin-top: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .hero .btn:hover {
   background-color: white;
   color: #242424;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .hero .btn:hover svg path {
   stroke: black;
-  transition: stroke 0.3s ease; 
+  transition: stroke 0.3s ease;
 }
-
 
 .divider {
   margin-top: 4rem;
